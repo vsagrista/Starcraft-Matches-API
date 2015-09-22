@@ -15,7 +15,7 @@ players = Player.create([
 ])
 
 matches = Match.create([
-	{winner_faction: "Terran", loser_faction: "Zerg", duration: 200000, date: Date.today, winner_id: players[0].id, loser_id: players[2].id},
-	{winner_faction: "Zerg", loser_faction: "Protoss", duration: 200000, date: Date.today, winner_id: players[1].id, loser_id: players[0].id},
-	{winner_faction: "Protoss", loser_faction: "Terran", duration: 200000, date: Date.today, winner_id: players[2].id, loser_id: players[1].id}
+	{winner_faction: "Terran", loser_faction: "Zerg", duration: 200000, date: Date.today, winner_id: players[0].id, loser_id: players[1].id},
+	{winner_faction: "Zerg", loser_faction: "Protoss", duration: 200000, date: Date.today, winner_id: players[2].id, loser_id: players[0].id},
+	{winner_faction: "Protoss", loser_faction: "Terran", duration: 200000, date: Date.today, winner_id: players[2].id, loser_id: players[0].id}
 ])

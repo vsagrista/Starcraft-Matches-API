@@ -24,7 +24,13 @@ class Api::MatchesController < ApplicationController
     render json: matches_with_user_faction
   end
 
-  def show 
+  def performance
+    player = Player.find_by(id: params[:id])
+
+    
+
+    
+    render json: player.calculate_performance(params[:id])
 
   	
   end
